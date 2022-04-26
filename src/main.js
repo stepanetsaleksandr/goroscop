@@ -6,7 +6,7 @@ import PageTwo from "./components/PageTwo.vue";
 import PageThree from "./components/PageThree.vue";
 import PageFour from "./components/PageFour.vue";
 import PageFive from "./components/PageFive.vue";
-// import router from "./router/index.js";
+
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
