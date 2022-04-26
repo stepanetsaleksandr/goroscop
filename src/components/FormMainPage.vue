@@ -4,25 +4,26 @@
 
     <div class="rectangle-grey">
       <div class="action-panel">
-        <div>Picked: {{ data }}</div>
-
-        <input
-          type="radio"
-          id="one"
-          value="Женщина"
-          v-model="data"
-          @click="show"
-        />
-        <label for="one">Женщина</label>
-
-        <input
-          type="radio"
-          id="two"
-          value="Мужчина"
-          v-model="data"
-          @click="show"
-        />
-        <label for="two">Мужчина</label>
+        <div class="inpt">
+          <input
+            type="radio"
+            id="one"
+            value="Женщина"
+            v-model="data"
+            @click="show"
+          />
+          <label for="one">Женщина</label>
+        </div>
+        <div class="inpt">
+          <input
+            type="radio"
+            id="two"
+            value="Мужчина"
+            v-model="data"
+            @click="show"
+          />
+          <label for="two">Мужчина</label>
+        </div>
       </div>
     </div>
     <router-link to="/1"
@@ -65,7 +66,6 @@ export default {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 100%;
 }
 
@@ -96,16 +96,23 @@ export default {
 }
 .action-panel {
   display: flex;
-
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
-  /* height: 15px; */
+  /* height: 50px; */
 }
 .action-item {
   display: inline-flex;
   align-items: center;
   margin: 10px;
+}
+
+.inpt {
+  margin: 15px;
+}
+
+label {
+  margin-left: 5px;
 }
 
 button {

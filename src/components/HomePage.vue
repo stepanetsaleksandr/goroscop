@@ -25,12 +25,7 @@ export default {
       },
     };
   },
-  // methods: {
-  //   onUpdateSalary(someData) {
-  //     console.log(someData);
-  //     console.log(this.parent.parentData);
-  //   },
-  // },
+
   components: {
     MainImage,
     TextContent,
